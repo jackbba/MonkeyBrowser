@@ -86,6 +86,9 @@
 				AA0004000000000000000006 /* ScriptEngine */,
 				AA0004000000000000000007 /* VideoPlayer */,
 				AA0004000000000000000008 /* Subtitle */,
+				AA000400000000000000000B /* Settings */,
+				AA000400000000000000000C /* Models */,
+				AA000400000000000000000D /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -135,6 +138,32 @@
 				AA0002000000000000000012 /* SubtitleBridge.swift */,
 			);
 			path = Subtitle;
+			sourceTree = "<group>";
+		};
+		AA000400000000000000000B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000013 /* ScriptsViewController.swift */,
+				AA0002000000000000000014 /* BookmarksViewController.swift */,
+				AA0002000000000000000015 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AA000400000000000000000C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000016 /* DataModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA000400000000000000000D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000017 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AA0004000000000000000009 /* Resources */ = {
