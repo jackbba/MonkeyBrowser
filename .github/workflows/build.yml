@@ -31,20 +31,29 @@ jobs:
       - name: Install CocoaPods
         run: |
           gem install cocoapods
-          pod install || true
+          pod install
+
+      - name: Verify Workspace
+        run: |
+          ls -la
+          echo "---"
+          ls -la MonkeyBrowser.xcworkspace/
 
       - name: Build App
         run: |
           BUILD_CONFIG="${{ github.event.inputs.build_type || 'release' }}"
 
-          # Project path
-          PROJECT_PATH="MonkeyBrowser.xcodeproj"
-
-          ls -la
-          echo "Project path: $PROJECT_PATH"
+          # Use workspace if Pods exist, otherwise project
+          if [ -d "MonkeyBrowser.xcworkspace" ]; then
+            BUILD_INPUT="MonkeyBrowser.xcworkspace"
+            echo "Using workspace: $BUILD_INPUT"
+          else
+            BUILD_INPUT="MonkeyBrowser.xcodeproj"
+            echo "Using project: $BUILD_INPUT"
+          fi
 
           xcodebuild clean build \
-            -project "$PROJECT_PATH" \
+            -workspace "$BUILD_INPUT" \
             -scheme "MonkeyBrowser" \
             -configuration "$BUILD_CONFIG" \
             -derivedDataPath build \
@@ -59,15 +68,14 @@ jobs:
           echo "=== Searching for .app file ==="
           find . -name "MonkeyBrowser.app" -type d
           echo "=== Build directory contents ==="
-          ls -la build/ 2>/dev/null || echo "No build dir"
-          find build -type d 2>/dev/null | head -20
+          ls -la build/Build/Products/ 2>/dev/null || echo "No build products dir"
 
       - name: Create IPA
         run: |
           mkdir -p ipa/Payload
 
           # Find .app file in multiple possible locations
-          APP_PATH=$(find . -name "MonkeyBrowser.app" -type d | head -1)
+          APP_PATH=$(find build -name "MonkeyBrowser.app" -type d | head -1)
 
           if [ -z "$APP_PATH" ]; then
             echo "Error: .app not found anywhere"
@@ -75,6 +83,7 @@ jobs:
           fi
 
           echo "Found app at: $APP_PATH"
+          ls -la "$APP_PATH"
           cp -R "$APP_PATH" ipa/Payload/
 
           cd ipa
