@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0001000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000001 /* AppDelegate.swift */; };
+		AA0001000000000000000002 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000002 /* SceneDelegate.swift */; };
+		AA0001000000000000000003 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000003 /* MainTabBarController.swift */; };
+		AA0001000000000000000004 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000004 /* BrowserViewController.swift */; };
+		AA0001000000000000000005 /* TabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000005 /* TabsViewController.swift */; };
+		AA0001000000000000000006 /* UserScriptEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000006 /* UserScriptEngine.swift */; };
+		AA0001000000000000000007 /* ScriptImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000007 /* ScriptImporter.swift */; };
+		AA0001000000000000000008 /* VLCPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000008 /* VLCPlayerViewController.swift */; };
+		AA0001000000000000000009 /* PiPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000009 /* PiPManager.swift */; };
+		AA0001000000000000000010 /* FloatingPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000010 /* FloatingPlayerManager.swift */; };
+		AA0001000000000000000011 /* SubtitleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000011 /* SubtitleManager.swift */; };
+		AA0001000000000000000012 /* ScriptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000012 /* ScriptsViewController.swift */; };
+		AA0001000000000000000013 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000013 /* BookmarksViewController.swift */; };
+		AA0001000000000000000014 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000014 /* SettingsViewController.swift */; };
+		AA0001000000000000000015 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000015 /* DataModels.swift */; };
+		AA0001000000000000000016 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000016 /* Extensions.swift */; };
+		AA0001000000000000000017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000017 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0002000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA0002000000000000000002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA0002000000000000000003 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000004 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000005 /* TabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000006 /* UserScriptEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScriptEngine.swift; sourceTree = "<group>"; };
+		AA0002000000000000000007 /* ScriptImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptImporter.swift; sourceTree = "<group>"; };
+		AA0002000000000000000008 /* VLCPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLCPlayerViewController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000009 /* PiPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPManager.swift; sourceTree = "<group>"; };
+		AA0002000000000000000010 /* FloatingPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPlayerManager.swift; sourceTree = "<group>"; };
+		AA0002000000000000000011 /* SubtitleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleManager.swift; sourceTree = "<group>"; };
+		AA0002000000000000000012 /* ScriptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptsViewController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000013 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000014 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000015 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		AA0002000000000000000016 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AA0002000000000000000017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0002000000000000000018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0002000000000000000019 /* MonkeyBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonkeyBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0003000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0004000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				AA0004000000000000000002 /* MonkeyBrowser */,
+				AA0004000000000000000009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0004000000000000000002 /* MonkeyBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				AA0004000000000000000003 /* Sources */,
+				AA0004000000000000000008 /* Resources */,
+			);
+			path = MonkeyBrowser;
+			sourceTree = "<group>";
+		};
+		AA0004000000000000000003 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA0004000000000000000004 /* App */,
+				AA0004000000000000000005 /* Browser */,
+				AA0004000000000000000006 /* ScriptEngine */,
+				AA0004000000000000000007 /* VideoPlayer */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AA0004000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000001 /* AppDelegate.swift */,
+				AA0002000000000000000002 /* SceneDelegate.swift */,
+				AA0002000000000000000003 /* MainTabBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA0004000000000000000005 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000004 /* BrowserViewController.swift */,
+				AA0002000000000000000005 /* TabsViewController.swift */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		AA0004000000000000000006 /* ScriptEngine */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000006 /* UserScriptEngine.swift */,
+				AA0002000000000000000007 /* ScriptImporter.swift */,
+			);
+			path = ScriptEngine;
+			sourceTree = "<group>";
+		};
+		AA0004000000000000000007 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000008 /* VLCPlayerViewController.swift */,
+				AA0002000000000000000009 /* PiPManager.swift */,
+				AA0002000000000000000010 /* FloatingPlayerManager.swift */,
+				AA0002000000000000000011 /* SubtitleManager.swift */,
+				AA0002000000000000000012 /* ScriptsViewController.swift */,
+				AA0002000000000000000013 /* BookmarksViewController.swift */,
+				AA0002000000000000000014 /* SettingsViewController.swift */,
+				AA0002000000000000000015 /* DataModels.swift */,
+				AA0002000000000000000016 /* Extensions.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AA0004000000000000000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000017 /* Assets.xcassets */,
+				AA0002000000000000000018 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA0004000000000000000009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000019 /* MonkeyBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0005000000000000000001 /* MonkeyBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0007000000000000000001 /* Build configuration list for PBXNativeTarget "MonkeyBrowser" */;
+			buildPhases = (
+				AA0003000000000000000002 /* Sources */,
+				AA0003000000000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonkeyBrowser;
+			productName = MonkeyBrowser;
+			productReference = AA0002000000000000000019 /* MonkeyBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0006000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					AA0005000000000000000001 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0007000000000000000003 /* Build configuration list for PBXProject "MonkeyBrowser" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"zh-Hans",
+				en,
+				Base,
+			);
+			mainGroup = AA0004000000000000000001;
+			productRefGroup = AA0004000000000000000009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0005000000000000000001 /* MonkeyBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0003000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0001000000000000000001 /* AppDelegate.swift */,
+				AA0001000000000000000002 /* SceneDelegate.swift */,
+				AA0001000000000000000003 /* MainTabBarController.swift */,
+				AA0001000000000000000004 /* BrowserViewController.swift */,
+				AA0001000000000000000005 /* TabsViewController.swift */,
+				AA0001000000000000000006 /* UserScriptEngine.swift */,
+				AA0001000000000000000007 /* ScriptImporter.swift */,
+				AA0001000000000000000008 /* VLCPlayerViewController.swift */,
+				AA0001000000000000000009 /* PiPManager.swift */,
+				AA0001000000000000000010 /* FloatingPlayerManager.swift */,
+				AA0001000000000000000011 /* SubtitleManager.swift */,
+				AA0001000000000000000012 /* ScriptsViewController.swift */,
+				AA0001000000000000000013 /* BookmarksViewController.swift */,
+				AA0001000000000000000014 /* SettingsViewController.swift */,
+				AA0001000000000000000015 /* DataModels.swift */,
+				AA0001000000000000000016 /* Extensions.swift */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0008000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = MonkeyBrowser/Supporting Files/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.monkeybrowser.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0008000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = MonkeyBrowser/Supporting Files/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.monkeybrowser.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA0008000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA0008000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0007000000000000000001 /* Build configuration list for PBXNativeTarget "MonkeyBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0008000000000000000001 /* Debug */,
+				AA0008000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0007000000000000000003 /* Build configuration list for PBXProject "MonkeyBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0008000000000000000003 /* Debug */,
+				AA0008000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AA0006000000000000000001 /* Project object */;
+}

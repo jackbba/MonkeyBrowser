@@ -1,0 +1,38 @@
+name: MonkeyBrowser
+organization: MonkeyBrowser
+developmentTeam: YOUR_TEAM_ID
+
+options:
+  bundleIdPrefix: com.monkeybrowser
+  deploymentTarget:
+    iOS: "15.0"
+  xcodeVersion: "14.0"
+  generateEmptyDirectories: true
+
+configs:
+  debug: Debug
+  release: Release
+
+settings:
+  base:
+    SWIFT_VERSION: "5.7"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    SUPPORTS_MACCATALYST: NO
+    INFOPLIST_FILE: MonkeyBrowser/Supporting Files/Info.plist
+
+targets:
+  MonkeyBrowser:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: MonkeyBrowser/Sources
+    resources:
+      - path: MonkeyBrowser/Resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.monkeybrowser.app
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: 1
+    dependencies:
+      - sdk: MobileVLCKit.framework
