@@ -2,7 +2,7 @@ name: Build IPA
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, clean-main ]
   workflow_dispatch:
     inputs:
       build_type:
@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: macos-14
     name: Build MonkeyBrowser IPA
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,16 +36,15 @@ jobs:
       - name: Build App
         run: |
           BUILD_CONFIG="${{ github.event.inputs.build_type || 'release' }}"
-          
-          # Detect workspace or project
-          if [ -d "MonkeyBrowser.xcworkspace" ]; then
-            BUILD_INPUT="MonkeyBrowser.xcworkspace"
-          else
-            BUILD_INPUT="MonkeyBrowser.xcodeproj"
-          fi
-          
+
+          # Project path
+          PROJECT_PATH="MonkeyBrowser.xcodeproj"
+
+          ls -la
+          echo "Project path: $PROJECT_PATH"
+
           xcodebuild clean build \
-            -project "$BUILD_INPUT" \
+            -project "$PROJECT_PATH" \
             -scheme "MonkeyBrowser" \
             -configuration "$BUILD_CONFIG" \
             -derivedDataPath build \
@@ -55,23 +54,34 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             | xcpretty
 
+      - name: Find and Verify .app
+        run: |
+          echo "=== Searching for .app file ==="
+          find . -name "MonkeyBrowser.app" -type d
+          echo "=== Build directory contents ==="
+          ls -la build/ 2>/dev/null || echo "No build dir"
+          find build -type d 2>/dev/null | head -20
+
       - name: Create IPA
         run: |
           mkdir -p ipa/Payload
-          
-          # Find .app file
-          APP_PATH=$(find build -name "MonkeyBrowser.app" -type d | head -1)
-          
+
+          # Find .app file in multiple possible locations
+          APP_PATH=$(find . -name "MonkeyBrowser.app" -type d | head -1)
+
           if [ -z "$APP_PATH" ]; then
-            echo "Error: .app not found"
+            echo "Error: .app not found anywhere"
             exit 1
           fi
-          
+
+          echo "Found app at: $APP_PATH"
           cp -R "$APP_PATH" ipa/Payload/
-          
+
           cd ipa
           zip -r "../MonkeyBrowser.ipa" Payload/
           cd ..
+
+          ls -la MonkeyBrowser.ipa
 
       - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
@@ -79,15 +89,3 @@ jobs:
           name: MonkeyBrowser-${{ github.sha }}
           path: MonkeyBrowser.ipa
           retention-days: 30
-
-      - name: Create Release
-        if: github.event.inputs.build_type == 'release'
-        uses: softprops/action-gh-release@v1
-        with:
-          files: MonkeyBrowser.ipa
-          tag_name: build-${{ github.run_number }}
-          name: Build ${{ github.run_number }}
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
