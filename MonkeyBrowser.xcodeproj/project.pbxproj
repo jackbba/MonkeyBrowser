@@ -18,12 +18,13 @@
 		AA0001000000000000000009 /* PiPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000009 /* PiPManager.swift */; };
 		AA0001000000000000000010 /* FloatingPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000010 /* FloatingPlayerManager.swift */; };
 		AA0001000000000000000011 /* SubtitleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000011 /* SubtitleManager.swift */; };
-		AA0001000000000000000012 /* ScriptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000012 /* ScriptsViewController.swift */; };
-		AA0001000000000000000013 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000013 /* BookmarksViewController.swift */; };
-		AA0001000000000000000014 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000014 /* SettingsViewController.swift */; };
-		AA0001000000000000000015 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000015 /* DataModels.swift */; };
-		AA0001000000000000000016 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000016 /* Extensions.swift */; };
-		AA0001000000000000000017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000017 /* Assets.xcassets */; };
+		AA0001000000000000000012 /* SubtitleBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000012 /* SubtitleBridge.swift */; };
+		AA0001000000000000000013 /* ScriptsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000013 /* ScriptsViewController.swift */; };
+		AA0001000000000000000014 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000014 /* BookmarksViewController.swift */; };
+		AA0001000000000000000015 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000015 /* SettingsViewController.swift */; };
+		AA0001000000000000000016 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000016 /* DataModels.swift */; };
+		AA0001000000000000000017 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000017 /* Extensions.swift */; };
+		AA0001000000000000000018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0002000000000000000018 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,14 +39,15 @@
 		AA0002000000000000000009 /* PiPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPManager.swift; sourceTree = "<group>"; };
 		AA0002000000000000000010 /* FloatingPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPlayerManager.swift; sourceTree = "<group>"; };
 		AA0002000000000000000011 /* SubtitleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleManager.swift; sourceTree = "<group>"; };
-		AA0002000000000000000012 /* ScriptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptsViewController.swift; sourceTree = "<group>"; };
-		AA0002000000000000000013 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
-		AA0002000000000000000014 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		AA0002000000000000000015 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
-		AA0002000000000000000016 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		AA0002000000000000000017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA0002000000000000000018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA0002000000000000000019 /* MonkeyBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonkeyBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0002000000000000000012 /* SubtitleBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleBridge.swift; sourceTree = "<group>"; };
+		AA0002000000000000000013 /* ScriptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptsViewController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000014 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000015 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AA0002000000000000000016 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		AA0002000000000000000017 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AA0002000000000000000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0002000000000000000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0002000000000000000020 /* MonkeyBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonkeyBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0004000000000000000002 /* MonkeyBrowser */,
-				AA0004000000000000000009 /* Products */,
+				AA0004000000000000000010 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0004000000000000000003 /* Sources */,
-				AA0004000000000000000008 /* Resources */,
+				AA0004000000000000000009 /* Resources */,
 			);
 			path = MonkeyBrowser;
 			sourceTree = "<group>";
@@ -83,6 +85,7 @@
 				AA0004000000000000000005 /* Browser */,
 				AA0004000000000000000006 /* ScriptEngine */,
 				AA0004000000000000000007 /* VideoPlayer */,
+				AA0004000000000000000008 /* Subtitle */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -121,29 +124,32 @@
 				AA0002000000000000000008 /* VLCPlayerViewController.swift */,
 				AA0002000000000000000009 /* PiPManager.swift */,
 				AA0002000000000000000010 /* FloatingPlayerManager.swift */,
-				AA0002000000000000000011 /* SubtitleManager.swift */,
-				AA0002000000000000000012 /* ScriptsViewController.swift */,
-				AA0002000000000000000013 /* BookmarksViewController.swift */,
-				AA0002000000000000000014 /* SettingsViewController.swift */,
-				AA0002000000000000000015 /* DataModels.swift */,
-				AA0002000000000000000016 /* Extensions.swift */,
 			);
-			path = Sources;
+			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
-		AA0004000000000000000008 /* Resources */ = {
+		AA0004000000000000000008 /* Subtitle */ = {
 			isa = PBXGroup;
 			children = (
-				AA0002000000000000000017 /* Assets.xcassets */,
-				AA0002000000000000000018 /* Info.plist */,
+				AA0002000000000000000011 /* SubtitleManager.swift */,
+				AA0002000000000000000012 /* SubtitleBridge.swift */,
+			);
+			path = Subtitle;
+			sourceTree = "<group>";
+		};
+		AA0004000000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA0002000000000000000018 /* Assets.xcassets */,
+				AA0002000000000000000019 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		AA0004000000000000000009 /* Products */ = {
+		AA0004000000000000000010 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA0002000000000000000019 /* MonkeyBrowser.app */,
+				AA0002000000000000000020 /* MonkeyBrowser.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,7 +170,7 @@
 			);
 			name = MonkeyBrowser;
 			productName = MonkeyBrowser;
-			productReference = AA0002000000000000000019 /* MonkeyBrowser.app */;
+			productReference = AA0002000000000000000020 /* MonkeyBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -183,15 +189,14 @@
 			};
 			buildConfigurationList = AA0007000000000000000003 /* Build configuration list for PBXProject "MonkeyBrowser" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = "zh-Hans";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				"zh-Hans",
 				en,
 				Base,
 			);
 			mainGroup = AA0004000000000000000001;
-			productRefGroup = AA0004000000000000000009 /* Products */;
+			productRefGroup = AA0004000000000000000010 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -216,11 +221,12 @@
 				AA0001000000000000000009 /* PiPManager.swift */,
 				AA0001000000000000000010 /* FloatingPlayerManager.swift */,
 				AA0001000000000000000011 /* SubtitleManager.swift */,
-				AA0001000000000000000012 /* ScriptsViewController.swift */,
-				AA0001000000000000000013 /* BookmarksViewController.swift */,
-				AA0001000000000000000014 /* SettingsViewController.swift */,
-				AA0001000000000000000015 /* DataModels.swift */,
-				AA0001000000000000000016 /* Extensions.swift */,
+				AA0001000000000000000012 /* SubtitleBridge.swift */,
+				AA0001000000000000000013 /* ScriptsViewController.swift */,
+				AA0001000000000000000014 /* BookmarksViewController.swift */,
+				AA0001000000000000000015 /* SettingsViewController.swift */,
+				AA0001000000000000000016 /* DataModels.swift */,
+				AA0001000000000000000017 /* Extensions.swift */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +239,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				INFOPLIST_FILE = MonkeyBrowser/Supporting Files/Info.plist;
+				INFOPLIST_FILE = MonkeyBrowser/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.monkeybrowser.app;
@@ -249,7 +255,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				INFOPLIST_FILE = MonkeyBrowser/Supporting Files/Info.plist;
+				INFOPLIST_FILE = MonkeyBrowser/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.monkeybrowser.app;
